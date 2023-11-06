@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stocks Review</title>
+        <style>
+
+            #BT001{
+                height: 6.25%;
+                width: 39%;
+                margin-left: 5.5%;
+                background-color: yellow
+            }
+            #BT002{
+                margin-left: 5.5%;
+                background-color: white;
+            }
+            #BT003{
+                margin-left: 0%;
+                background-color: green;
+            }
+            #txt001{
+                margin-left: 5.5%;
+                margin-top: 0%;
+                color: black;
+            }
+            #txt002{
+                margin-left: 15%;
+                margin-top: -0.95%;
+                color: black;
+            }
+            hr{
+                width: 100%;
+                height: 0.5%;
+                border-top: 0.5px solid black;
+                top: 25%;
+                margin-top: 8.05%;
+            }
+            .vl {
+                border-left: 0.5px solid black;
+                height: 25%;
+                position: absolute;
+                left: 50%;
+                margin-left: -3px;
+                top: 0;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+
+            <button id = BT001>Recommendation Check</button>
+            <h3 id = "txt001">your holdings</h3>
+            <button id = "BT002">View</button>
+            <button id = "BT003">Buy</button>
+            <div id = "txt002"></div>
+            <hr>
+            <div class="vl"></div>
+        <script type="module">
+            import { myHoldings } from "/home/k4tran/git/website/.vscode/shares&exchange website/DataModel"
+            import { CTT, JAN } from "/home/k4tran/git/website/.vscode/shares&exchange website/StocksData"
+            export var myStockHoldings = myHoldings => {
+                sharesOwned: 2
+                ETFsOwned: 1
+                amountInvested: 1200
+                averageAmountInvestedPerShare: 500
+                stocksOwnedInCode: [CTT,JAN]
+                stocksOwnedInName: [CettireLtd,JanisonEducationGroupLtd]
+                TotalValueHistorical: [1200]
+                totalGainLossToday: -100
+            }
+            var remainingCash = 190;
+            document.getElementById("txt002").innerHTML = "Remaining cash: $" + remainingCash
+        </script>
+
+    </body>
+</html>
