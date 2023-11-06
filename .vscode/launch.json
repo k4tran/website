@@ -14,7 +14,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open SharesValue.html",
-            "file": "/home/k4tran/git/website/.vscode/chess analyser/ChessVSdeltaone.html"
+            "file": "/home/k4tran/git/website/.vscode/NEWchessAI/NEWchessAI.html"
         }
     ]
 }
